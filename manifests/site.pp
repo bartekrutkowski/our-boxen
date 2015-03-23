@@ -58,7 +58,7 @@ node default {
   include include fonts::adobe::sourcecodepro
   
   class { 'firefox':
-    version => latest,
+    version => '36'
   }
 
   # fail if FDE is not enabled
