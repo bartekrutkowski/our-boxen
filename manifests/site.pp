@@ -56,6 +56,8 @@ node default {
   include xtrafinder
   include fonts::adobe::sourcecodepro
   include sublime_text
+  include sourcetree
+  include keka
   
   class { 'firefox':
     version => '36.0.4'
@@ -90,7 +92,16 @@ node default {
   }
 
   appstore::app { 'Wunderlist':
-    source => 'wunderlist-to-do-list-tasks/id410628904', # required
+    source => 'wunderlist-to-do-list-tasks/id410628904'
+  }
+  appstore::app { 'Caffeine':
+    source => 'caffeine/id411246225'
+  }
+  appstore::app { 'Evernote':
+    source => 'evernote/id406056744'
+  }
+  appstore::app { '1Password':
+    source => '1password-password-manager/id443987910'
   }
 
   # fail if FDE is not enabled
