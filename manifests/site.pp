@@ -67,8 +67,26 @@ node default {
   sublime_text::package { 'GitSavvy':
     source => 'divmain/GitSavvy'
   }
-  sublime_text::package { 'SideBarEnhancements':
+  sublime_text::package { 'VcsGutter':
     source => 'titoBouzout/SideBarEnhancements'
+  }
+  sublime_text::package { 'SideBarEnhancements':
+    source => 'bradsokol/VcsGutter'
+  }
+  sublime_text::package { 'ThemeSpacegray':
+    source => 'kkga/spacegray'
+  }
+  sublime_text::package { 'ThemeTomorrowNight':
+    source => 'chriskempson/tomorrow-theme'
+  }
+  sublime_text::package { 'Jinja2':
+    source => 'chrisgeo/jinja2-tmbundle'
+  }
+  sublime_text::package { 'Requirementstxt':
+    source => 'wuub/requirementstxt'
+  }
+  sublime_text::package { 'PrettyJson':
+    source => 'dzhibas/SublimePrettyJson'
   }
 
   appstore::app { 'Wunderlist':
