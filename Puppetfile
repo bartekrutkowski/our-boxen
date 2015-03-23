@@ -39,26 +39,29 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # some/most of these if you want, but it's not recommended.
 
 github "brewcask",    "0.0.6"
-github "dnsmasq",     "2.0.1"
-github "foreman",     "1.2.0"
-github "gcc",         "2.2.0"
-github "git",         "2.7.5"
-github "go",          "2.1.0"
+#github "dnsmasq",     "2.0.1"
+#github "foreman",     "1.2.0"
+#github "gcc",         "2.2.0"
+#github "git",         "2.7.5"
+#github "go",          "2.1.0"
 github "homebrew",    "1.11.2"
-github "hub",         "1.4.0"
-github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
-github "nginx",       "1.4.4"
-github "nodejs",      "4.0.0"
+#github "hub",         "1.4.0"
+#github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
+#github "nginx",       "1.4.4"
+#github "nodejs",      "4.0.0"
 github "openssl",     "1.0.0"
-github "phantomjs",   "2.3.0"
-github "pkgconfig",   "1.0.0"
+#github "phantomjs",   "2.3.0"
+#github "pkgconfig",   "1.0.0"
 github "repository",  "2.3.0"
-github "ruby",        "8.1.7"
+#github "ruby",        "8.1.7"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
-github "xquartz",     "1.2.1"
+#github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
 github "firefox",     "1.2.3"
+github "iterm2",
+github "xtrafinder",
+github "fonts",
