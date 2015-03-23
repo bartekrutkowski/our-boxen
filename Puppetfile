@@ -62,6 +62,6 @@ github "sudo",        "1.0.0"
 # https://github.com/boxen.
 
 github "firefox",     "1.2.3"
-github "iterm2",      "latest"
+github "iterm2",      "1.2.4"
 github "xtrafinder",  "1.0.1"
 github "fonts",       "0.0.3"
