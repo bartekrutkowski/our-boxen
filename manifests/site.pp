@@ -57,6 +57,7 @@ node default {
   include fonts::adobe::sourcecodepro
   include sublime_text
   include sourcetree
+  include dropbox
   
   class { 'firefox':
     version => '36.0.4'
