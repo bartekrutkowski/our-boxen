@@ -54,7 +54,11 @@ node default {
   include iterm2::stable
   include iterm2::colors::solarized_dark
   include xtrafinder
-  include include fonts::adobe::sourcecodepro
+  include fonts::adobe::sourcecodepro
+  
+  class { 'firefox':
+    version => '36.0.4'
+  }
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
