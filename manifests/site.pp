@@ -50,8 +50,6 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include git
-  include firefox
   include iterm2::stable
   include iterm2::colors::solarized_dark
   include xtrafinder
