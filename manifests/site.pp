@@ -52,6 +52,14 @@ node default {
   # core modules, needed for most things
   include git
   include firefox
+  include iterm2::stable
+  include iterm2::colors::solarized_dark
+  include xtrafinder
+  include include fonts::adobe::sourcecodepro
+  
+  class { 'firefox':
+    version => latest
+  }
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
