@@ -55,9 +55,20 @@ node default {
   include iterm2::colors::solarized_dark
   include xtrafinder
   include fonts::adobe::sourcecodepro
+  include sublime_text
   
   class { 'firefox':
     version => '36.0.4'
+  }
+  
+  sublime_text::package { 'Anaconda':
+    source => 'DamnWidget/Anaconda'
+  }
+  sublime_text::package { 'GitSavvy':
+    source => 'divmain/GitSavvy'
+  }
+  sublime_text::package { 'SideBarEnhancements':
+    source => 'titoBouzout/SideBarEnhancements'
   }
 
   appstore::app { 'Wunderlist':
