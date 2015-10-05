@@ -58,11 +58,7 @@ node default {
   include sublime_text
   include sourcetree
   include dropbox
-  
-  class { 'firefox':
-    version => '36.0.4'
-  }
-  
+
   sublime_text::package { 'Anaconda':
     source => 'DamnWidget/Anaconda'
   }
@@ -94,9 +90,6 @@ node default {
   appstore::app { 'Wunderlist':
     source => 'wunderlist-to-do-list-tasks/id410628904'
   }
-  appstore::app { 'Caffeine':
-    source => 'caffeine/id411246225'
-  }
   appstore::app { 'Evernote':
     source => 'evernote/id406056744'
   }
@@ -114,6 +107,25 @@ node default {
     [
       'openconnect',
     ]:
+  }
+  package {
+    [
+      'atom',
+      'dropbox',
+      'flux',
+      'google-chrome',
+      'iterm2',
+      'microsoft-lync',
+      'packer',
+      'sourcetree',
+      'spectacle',
+      'transmission',
+      'tunnelblick',
+      'vagrant',
+      'virtualbox',
+      'virtualbox-extension-pack',
+      'vlc',
+    ]: provider => 'brewcask'
   }
 
   file { "${boxen::config::srcdir}/our-boxen":
