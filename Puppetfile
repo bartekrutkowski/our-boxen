@@ -62,7 +62,7 @@ github "xquartz",     "1.2.1"
 # https://github.com/boxen.
 
 github "firefox",     "1.2.3"
-github "iterm2",      "1.2.4"
+github "iterm2",      "1.2.5"
 github "fonts",       "0.0.3"
 github "appstore",    "0.0.6", :repo => "xdissent/puppet-appstore"
 github "sublime_text","1.1.0"
